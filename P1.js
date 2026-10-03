@@ -1,9 +1,18 @@
-class mhs = {                 // Definisi Class mhs
-  constructor(att1, att2) { ... }  // Konstruktor untuk inisialisasi awal atribut
-  mtd(att3) {                  // Method di dalam kelas
+class mhs {
+  // 1. Deklarasi constructor tanpa titik-titik (...)
+  constructor(att1, att2) {
+    this.att1 = att1;
+    this.att2 = att2;
+  }
+
+  // 2. Method di dalam kelas
+  mtd(att3) {
     console.log(att3);
   }
 }
 
-obj = new mhs("Saya");         // Instansiasi objek baru dari kelas mhs
-obj.mtd("Saya");               // Pemanggilan method pada objek
+// 3. Instansiasi objek baru dengan keyword let/const dan argumen yang sesuai
+const obj = new mhs("Saya", "Atribut 2");
+
+// 4. Pemanggilan method
+obj.mtd("Saya");
