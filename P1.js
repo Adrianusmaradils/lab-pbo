@@ -1,4 +1,4 @@
-lass mhs = {                 // Definisi Class mhs
+class mhs = {                 // Definisi Class mhs
   constructor(att1, att2) { ... }  // Konstruktor untuk inisialisasi awal atribut
   mtd(att3) {                  // Method di dalam kelas
     console.log(att3);
